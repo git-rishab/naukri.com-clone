@@ -1,0 +1,328 @@
+/* div{
+    border: 1px solid black;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigaition Bar */
+#logo{
+    margin-left: 1.8in;
+}
+
+#logo > img{
+    height: 0.8in;
+}
+#navBar{
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    position: sticky;
+    top: 0.1px;
+}
+li {
+    display: inline;
+    margin-left: 50px;
+    color: grey;
+    font-weight: medium;
+}
+
+#nav{
+    margin-left: 0.5in;
+    width: 4in;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: large;
+}
+
+#nav li{
+    color: #445578;
+}
+
+#nav li:hover{
+    color: #1976D2;
+    cursor: pointer;
+}
+
+#login{
+    display: flex;
+    width: 3.5in;
+    margin-left: 3in;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#login> button{
+    height: fit-content;
+    line-height: 1.2cm;
+    width: 2.5cm;
+    border-radius: 30px;
+    color: #457eff;
+    background-color: white;
+    border-color: #457eff;
+    /* font-family: Inter,Roboto,sans-serif,Helvetica; */
+    font-size: 0.4cm;
+    font-weight: 700;
+}
+#login > button:nth-child(2){
+    background-color: #ff7555;
+    color: white;
+    border-color: #ff7555;
+}
+#login> button:hover{
+    cursor: pointer;
+}
+.line{
+    border-left: 2px solid grey;
+    height: 1.5cm;
+}
+
+
+
+/* Header Section */
+
+#header{
+    width: 100%;
+    height: 3in;
+    text-align: center;
+    margin: auto;
+    background: url("//static.naukimg.com/s/7/103/i/homepageBubble.cf43a7a8.svg") 50%;
+    background-size: cover;
+    border: 1px solid white;
+}
+#head{
+    margin-top: 70px;
+}
+#head > p{
+    color: grey;
+}
+
+
+/* Search Input */
+#header> div:nth-child(2){
+    height: 2cm;
+    width: 60%;
+    margin: auto;
+    margin-top: 110px;
+    border-radius: 50px;
+    display: flex;
+    border: 1px solid #445578;
+    background-color: white;
+}
+
+#header input{
+    font-size: 18px;
+    margin-left: 31px;
+    color: #1b2437;
+    border: none;
+    font-family: "Inter";
+    flex-grow: 0.98;
+    color: #091e42;
+}
+#header input:focus{
+    outline: none;
+}
+
+.search{
+    margin-top: 10px;
+}
+
+
+
+
+/* Below Search */
+
+#skills{
+   display: flex;
+   flex-direction: column;
+   width: 65%;
+   height: 1in;
+   margin: auto; 
+   margin-top: 1in;
+}
+
+#skills > div{
+    display: flex;
+    justify-content: space-around;
+    height: 1in;
+    /* line-height: -5px; */
+    text-align: center;
+}
+
+#skills > div > div{
+    border-radius: 15px 50px 30px;
+    width:max-content;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #EEEEEE;
+}
+#skills > div > div > p{
+    margin: 0px 40px 0 40px;
+}
+#skills > div > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Hiring Companies */
+
+#hiring{
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 45px 20px;
+}
+
+
+#hiring p{
+    margin: 10px 0px 10px 0px;
+}
+#hiring img{
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+/* #hiring > div: */
+
+
+/* Sponsored companies */
+
+#sponsored{
+    display: grid;
+    width: 65%;
+    margin: auto;
+    grid-template-columns: repeat(4,203px);
+    gap: 40px 70px;
+    text-align: center;
+    
+}
+
+#sponsored > div{
+    box-shadow : rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    border-radius: 30px 10px;
+    padding: 8px 5px 5px 5px;
+}
+#sponsored > div > img:nth-child(1){
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+#sponsored > .sponserHov:hover{
+    cursor: pointer;
+    box-shadow: rgba(79, 79, 151, 0.05) 0px 4px 16px, rgba(50, 50, 218, 0.05) 0px 8px 32px;
+}
+
+/* Filters */
+
+.filters{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+}
+
+.filters > div{
+    border: 1px solid #D3E1EA;
+    border-radius: 22px;
+}
+.filters p{
+    margin: 15px 20px 15px 20px;   
+}
+
+.filters > div:hover{
+    cursor: pointer;
+    color: #457eff;
+}
+
+
+
+/* Grow Your Career */
+
+#grow{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+#grow h4{
+    font-size: 27px;
+    margin: 10px 3px 10px 3px;
+    line-height: 35px;
+}
+#grow > div{
+    padding: 25px 18px 10px 18px;
+}
+#grow > div:nth-child(1){
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* Footer */
+
+.foot1{
+    padding-top: 60px;
+}
+
+.foot1 p{
+    color: #445578;
+    margin-bottom: 25px;
+}
+.foot1 > div:nth-child(5) > p{
+    margin: 10px 0px 20px;
+}
+.foot1 > div:nth-child(5){
+    border: 1px solid #EEEEEE;
+    height: 170px;
+    width: 320px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer> div:nth-child(1){
+    display: flex;
+    width: 65%;
+    height: 8cm;
+    margin: auto;
+    justify-content: space-between;
+}
+#footer> div:nth-child(1) > div:nth-child(1) > div:nth-child(1) img{
+    height: 1.5in;
+}
+.sitemap > p:hover{
+    cursor: pointer;
+    color: #457eff;
+}
+.foot1Imgs:hover{
+    cursor: pointer;
+}
+
+.socials > div:nth-child(2){
+    margin-top: 30px;
+}
+.socials p{
+    margin-bottom: 15px;
+    color: #445578;
+}
+
+.foot2{
+    height: 3cm;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+}
+.foot2 p{
+    color: #445578;
+    margin-top: 10px;
+}
+
+
