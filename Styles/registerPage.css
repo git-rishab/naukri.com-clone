@@ -1,0 +1,94 @@
+/* div{
+    border: 1px solid black;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigaition Bar */
+#logo{
+    margin-left: 1.8in;
+}
+
+#logo > img{
+    height: 0.8in;
+}
+#navBar{
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    position: sticky;
+    top: 0.1px;
+}
+li {
+    display: inline;
+    margin-left: 50px;
+    color: grey;
+    font-weight: medium;
+}
+
+#nav{
+    margin-left: 0.5in;
+    width: 4in;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: large;
+}
+
+#nav li{
+    color: #445578;
+}
+
+#nav li:hover{
+    color: #1976D2;
+    cursor: pointer;
+}
+
+#login{
+    display: flex;
+    width: 3.5in;
+    margin-left: 3in;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#login p{
+    color: #445578;
+}
+#login span{
+    cursor: pointer;
+    color: #457eff;
+}
+
+
+/* Form */
+
+body{
+    background-color: #fafbfe;
+}
+#form{
+    width: 60%;
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px 20px 20px 50px;
+    margin: auto;
+    margin-top: 40px;
+}
+#form > h1{
+    margin: 10px 0px 40px 0px;
+    font-size: 32px;
+    line-height: 28px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form > input{
+    margin: 0px 0px 30px 0px;
+    display: block;
+}
+

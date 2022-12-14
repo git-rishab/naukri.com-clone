@@ -1,0 +1,103 @@
+{
+    "data" :[
+        {
+            "name":"Virtual Drive 6th Apl | Frontend web Developer | Hyderabad",
+            "p1":"Cybage",
+            "p2":"Good to have: Google App Engine, Git",
+            "rating":"4.0 ",
+            "experience":"2-6 Yrs",
+            "salary":"50,000 - 3,00,000 PA.",
+            "location":"Temp. WFH - Hyderabad/Secunderabad",
+            "skills":["Responsive UI","Python","RWD","HTML","Angular","Google App Engine","Git"],
+            "date":"FEW HOURS AGO",
+            "dateCode":"1"
+        },
+        {
+            "name":"Web Developer & Designer",
+            "p1":"Seepositive",
+            "p2":"Should be able to work on mobile application (Both- Android ios)",
+            "rating":"4.0 ",
+            "experience":"2-6 Yrs",
+            "salary":"Not disclosed",
+            "location":"Raipur",
+            "skills":["Backend","Web technologies","PHP","HTML","IOS","Search engine optimization"],
+            "date":"FEW HOURS AGO",
+            "dateCode":"1"
+        },
+        {
+            "name":"Immediate Hiring For React JS Web Developer - MNC",
+            "p1":"Barrla Systems Pvt Ltd",
+            "p2":"Experience with popular React.js workflows (such as Flux or Redux) is a plus Hands-on e...",
+            "rating":"4.8 ",
+            "experience":"1-5 Yrs",
+            "salary":"Not disclosed",
+            "location":"Chennai(Mylapore)",
+            "skills":["Backend","React.Js","HTML","CSS","javascript"],
+            "date":"1 DAY AGO",
+            "dateCode":"2"
+        },
+        {
+            "name":"Web Developer",
+            "p1":"Transperfect",
+            "p2":"job-description fs12 grey-text",
+            "rating":"4.8 ",
+            "experience":"0-2 Yrs",
+            "salary":"50,000 - 2,75,000 PA.",
+            "location":"Pune",
+            "skills":["Drupal","Coding","XML","PHP","HTML","SEM"],
+            "date":"1 DAY AGO",
+            "dateCode":"2"
+        },
+        {
+            "name":"PHP/LAMP Web Developer - CodeIgniter/Wordpress",
+            "p1":"Hyrezy Talent Solutions",
+            "p2":"Experience working within a team setting The candidate should have some team leadership...",
+            "rating":"4.8 ",
+            "experience":"4-9 Yrs",
+            "salary":"50,000 - 8,75,000 PA.",
+            "location":"Noida",
+            "skills":["MySQL","Apache Server","LAMP","PHP","Server Administration","CodeIgniter"],
+            "date":"2 DAY AGO",
+            "dateCode":"3"
+        },
+        {
+            "name":"Frontend Web Developer - UI Platform",
+            "p1":"Hyrezy Talent Solutions",
+            "p2":"- We are looking for a Front-End Web Developer who is motivated to combine the art of d...",
+            "rating":"4.8 ",
+            "experience":"3-6Yrs",
+            "salary":"50,000 - 4,75,000 PA.",
+            "location":"Noida",
+            "skills":["jQuery","AJAX","OOPS","CSS","API Integration"],
+            "date":"2 DAY AGO",
+            "dateCode":"3"
+        },
+        {
+            "name":"Web Developer",
+            "p1":"Elektrobit",
+            "p2":"Experience with embedded systems and IVI related SW components is a must Rookie experie...",
+            "rating":"4.2 ",
+            "experience":"4-8Yrs",
+            "salary":"50,000 - 4,75,000 PA.",
+            "location":"Bangalore/Bengaluru",
+            "skills":["Android","LINUX","QNX","React Framework","UML"],
+            "date":"1 DAY AGO",
+            "dateCode":"2"
+        },
+        {
+            "name":"Web Developer/Full Stack Developer",
+            "p1":"Proprofs",
+            "p2":"Good problem solving experience using JavaScript or ES6 with earlier versionsThis is th...",
+            "rating":"3.5 ",
+            "experience":"4-6Yrs",
+            "salary":"50,000 - 7,75,000 PA.",
+            "location":"Temp. WFH - Delhi / NCR",
+            "skills":["Symfony Framework","web technologies","php","Laravel","Codeigniter","Symfony"],
+            "date":"FEW HOURS AGO",
+            "dateCode":"1"
+        }
+    
+    ]
+}
+
+
