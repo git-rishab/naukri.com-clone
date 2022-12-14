@@ -1,0 +1,263 @@
+/* div{
+    border: 1px solid black;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigaition Bar */
+#logo{
+    margin-left: 1.8in;
+}
+
+#logo > img{
+    height: 0.8in;
+}
+#navBar{
+    display: flex;
+    /* margin-top: -1px; */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background-color: white;
+    position: sticky;
+    top: 1px;
+}
+li {
+    display: inline;
+    margin-left: 50px;
+    color: grey;
+    font-weight: medium;
+}
+
+#nav{
+    margin-left: 0.5in;
+    width: 4in;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: large;
+}
+
+#nav li{
+    color: #445578;
+}
+
+#nav li:hover{
+    color: #1976D2;
+    cursor: pointer;
+}
+
+#login{
+    display: flex;
+    width: 3.5in;
+    /* margin-left: 3in; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+#login> button{
+    height: fit-content;
+    line-height: 1.2cm;
+    width: 2.5cm;
+    border-radius: 30px;
+    color: #457eff;
+    background-color: white;
+    border-color: #457eff;
+    /* font-family: Inter,Roboto,sans-serif,Helvetica; */
+    font-size: 0.4cm;
+    font-weight: 700;
+}
+#login > button:nth-child(2){
+    background-color: #ff7555;
+    color: white;
+    border-color: #ff7555;
+}
+#login> button:hover{
+    cursor: pointer;
+}
+.line{
+    border-left: 2px solid grey;
+    height: 1.5cm;
+}
+
+/* Search */
+
+#search{
+    width: 240px;
+    padding-top: 10px;
+    display: flex;
+    border: 1px solid #445578;
+    height: fit-content;
+    border-radius: 50px;
+    margin-top: 12px;
+    background-color: rgb(248, 247, 247);
+    align-items:flex-start;
+}
+#search > div:nth-child(1){
+    margin-left: 14px;
+}
+.search{
+    margin-bottom: 8px;
+}
+#search input{
+    height: 0.8cm;
+    font-size: 15px;
+    color: #1b2437;
+    border: none;
+    background-color: rgb(248, 247, 247);
+    font-family: "Inter";
+    flex-grow: 0.1;
+    color: #091e42;
+}
+#search input:focus{
+    outline: none;
+}
+
+/* Footer */
+
+.foot1{
+    padding-top: 60px;
+}
+
+.foot1 p{
+    color: #445578;
+    margin-bottom: 25px;
+}
+.foot1 > div:nth-child(5) > p{
+    margin: 10px 0px 20px;
+}
+.foot1 > div:nth-child(5){
+    border: 1px solid #EEEEEE;
+    height: 170px;
+    width: 320px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#footer> div:nth-child(1){
+    display: flex;
+    width: 65%;
+    height: 8cm;
+    margin: auto;
+    justify-content: space-between;
+}
+#footer> div:nth-child(1) > div:nth-child(1) > div:nth-child(1) img{
+    height: 1.5in;
+}
+.sitemap > p:hover{
+    cursor: pointer;
+    color: #457eff;
+}
+.foot1Imgs:hover{
+    cursor: pointer;
+}
+
+.socials > div:nth-child(2){
+    margin-top: 30px;
+}
+.socials p{
+    margin-bottom: 15px;
+    color: #445578;
+}
+
+.foot2{
+    height: 3cm;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+}
+.foot2 p{
+    color: #445578;
+    margin-top: 10px;
+}
+
+
+
+/* Body */
+body{
+    background-color: #fafafa;
+}
+
+
+/* Main */
+#main{
+    display: flex;
+    width: 83%;
+    /* height: 500px; */
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+/* Filter */
+#filter{
+    width: 20%;
+    height: 200px;
+    background-color: white;
+}
+
+
+/* Search Results */
+#results{
+    width: 55%;
+    /* background-color: white; */
+}
+#results > div{
+    padding: 25px 30px 25px 30px;
+    margin: 30px 10px 30px 10px;
+    background-color: white;
+}
+.head{
+    color: #091e42;
+    font-weight:550;
+    font-size: medium;
+    margin-bottom: 12px;
+}
+.p1{
+    display: inline;
+    color: #091e42;
+    margin: 0px 10px 25px 0px;
+}
+.info{
+    margin: 8px 0px 8px 0px;
+    font-size: 13.5px;
+}
+.p2{
+    margin-bottom: 23px;
+    display: inline-block;
+}
+.date{
+    background-color: #d7f2e3;
+    width: 90px;
+    text-align: center;
+    border: none;
+    margin: 35px 0px 0px -10px;
+}
+.infos, .infos2, .infos3{
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+}
+.infos2{
+    margin-left: 20px;
+}
+.bigDiv:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+/* Bonus Part */
+#bonus{
+    width: 20%;
+    height: 200px;
+    background-color: white;
+}
+
+

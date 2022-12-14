@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./Styles/registerPage.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navBar">
+        <a href="./Dashboard.html"><div id="logo"><img src="./Photos/JobSearch.jpg" alt="Logo"></div></a>
+        <div id="nav">
+            <ul>
+                <li>Jobs</li>
+                <li>Companies</li>
+                <li>Services</li>
+            </ul>
+            
+        </div>
+        
+
+        <div id="login">
+            <p>Already Registered? <span>Login</span> here</p>
+        </div>
+    </div>
+
+    <!-- Form -->
+
+    <div id="form">
+
+        <h1>Find a job & grow your career</h1>
+
+        <form>
+
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="What is your name?" id="name" value="" name="name">
+
+            <label for="email">Email Id</label>
+            <input type="email" placeholder="Tell us your Email ID" id="email" name="email" value="">
+            <p>We'll send you relevant jobs in your mail</p>
+
+            <label for="pass">Password</label>
+            <input type="password" placeholder="Create a Password for your account" name="pass" id="pass" value="">
+            <p>Minimum 6 characters required</p>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="number" placeholder="Mobile Number" name="mobile" id="mobile">
+            <p>Recruiters will call you on this number</p>
+
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <h2>I'm Experienced</h2>
+                    <p>I have work experience (excluding internships)</p>
+
+                </div>
+
+                <div>
+                    <img src="" alt="">
+                    <h2>I'm a Fresher</h2>
+                    <p>I am a student/ Haven't worked after graduation </p>
+                    
+                </div>
+            </div>
+
+            <input type="checkbox" id="check" name="check"><label for="check">Send me important updates on <img src="" alt=""> Whatsapp</label>
+
+            <p>By clicking Register, you agree to the Terms and Conditions & Privacy Policy of JobSearch.com</p>
+
+            <input type="submit" placeholder="Register Now">
+
+        </form>
+
+    </div>
+
+
+</body>
+<script src="./Scripts/registerPage.js"></script>
+</html>
