@@ -22,57 +22,64 @@
         
 
         <div id="login">
-            <p>Already Registered? <span>Login</span> here</p>
+            <p>Already Registered? <span onclick="location.href=`./loginPage.html`">Login</span> here</p>
         </div>
     </div>
 
     <!-- Form -->
 
     <div id="form">
-
+        
         <h1>Find a job & grow your career</h1>
+        <div style="width: 80%; margin: auto;">
+            <form id="mainForm">
 
-        <form>
+                <label for="name"><span>Full Name</span></label>
+                <input type="text" placeholder="What is your name?" id="name" name="name">
 
-            <label for="name">Full Name</label>
-            <input type="text" placeholder="What is your name?" id="name" value="" name="name">
+                <label for="email"><span>Email Id</span></label>
+                <input type="email" placeholder="Tell us your Email ID" name="email">
+                <p>We'll send you relevant jobs in your mail</p>
 
-            <label for="email">Email Id</label>
-            <input type="email" placeholder="Tell us your Email ID" id="email" name="email" value="">
-            <p>We'll send you relevant jobs in your mail</p>
+                <label for="pass"><span>Password</span></label>
+                <input type="password" placeholder="Create a Password for your account" name="pass">
+                <p>Minimum 6 characters required</p>
 
-            <label for="pass">Password</label>
-            <input type="password" placeholder="Create a Password for your account" name="pass" id="pass" value="">
-            <p>Minimum 6 characters required</p>
+                <label for="mobile"><span>Mobile Number</span></label>
+                <input type="number" placeholder="Mobile Number" name="mobile">
+                <p>Recruiters will call you on this number</p>
 
-            <label for="mobile">Mobile Number</label>
-            <input type="number" placeholder="Mobile Number" name="mobile" id="mobile">
-            <p>Recruiters will call you on this number</p>
+                <p class="p">Work Status</p>
+                <div id="work">
+                    <div class="work">
+                        <img src="./Photos/work2.png" alt="Experienced">
+                        <div>
+                            <h2>I'm Experienced</h2>
+                            <p>I have work experience (excluding internships)</p>
+                        </div>
+                        
 
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h2>I'm Experienced</h2>
-                    <p>I have work experience (excluding internships)</p>
+                    </div>
 
+                    <div class="work">
+                        <img src="./Photos/fresher.png" alt="Fresher">
+                        <div>
+                            <h2>I'm a Fresher</h2>
+                            <p>I am a student/ Haven't worked after graduation </p>
+                        </div>
+                        
+                        
+                    </div>
                 </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h2>I'm a Fresher</h2>
-                    <p>I am a student/ Haven't worked after graduation </p>
                     
-                </div>
-            </div>
+                <input type="checkbox" id="check" name="check"><label for="check"><span class="tick">Send me important updates on </span><img src="./Photos/whatsapp.png" alt=""><span class="tick">Whatsapp</span></label>
 
-            <input type="checkbox" id="check" name="check"><label for="check">Send me important updates on <img src="" alt=""> Whatsapp</label>
+                <p id="tc">By clicking Register, you agree to the <span class="tc">Terms and Conditions</span> & <span class="tc">Privacy Policy</span> of JobSearch.com</p>
 
-            <p>By clicking Register, you agree to the Terms and Conditions & Privacy Policy of JobSearch.com</p>
+                <input type="submit" id="submit" onclick="location.href=`./loginPage.html`">
 
-            <input type="submit" placeholder="Register Now">
-
-        </form>
-
+            </form>
+        </div>
     </div>
 
 

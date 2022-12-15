@@ -34,6 +34,7 @@ function createDOM(arr) {
     let login = document.createElement("button");
     login.innerText = "LOGIN TO APPLY";
     login.setAttribute("id","btn2");
+    login.setAttribute("onclick","location.href=`./loginPage.html`")
 
     let line = document.createElement("div");
 

@@ -48,37 +48,7 @@
     cursor: pointer;
 }
 
-#login{
-    display: flex;
-    width: 3.5in;
-    /* margin-left: 3in; */
-    align-items: center;
-    justify-content: space-evenly;
-}
-#login> button{
-    height: fit-content;
-    line-height: 1.2cm;
-    width: 2.5cm;
-    border-radius: 30px;
-    color: #457eff;
-    background-color: white;
-    border-color: #457eff;
-    /* font-family: Inter,Roboto,sans-serif,Helvetica; */
-    font-size: 0.4cm;
-    font-weight: 700;
-}
-#login > button:nth-child(2){
-    background-color: #ff7555;
-    color: white;
-    border-color: #ff7555;
-}
-#login> button:hover{
-    cursor: pointer;
-}
-.line{
-    border-left: 2px solid grey;
-    height: 1.5cm;
-}
+
 /* Search */
 
 #search{
@@ -89,6 +59,7 @@
     height: fit-content;
     border-radius: 50px;
     margin-top: 12px;
+    margin-left: 250px;
     background-color: rgb(248, 247, 247);
     align-items:flex-start;
 }
