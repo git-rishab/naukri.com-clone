@@ -55,20 +55,21 @@ li {
     justify-content: space-evenly;
 }
 #login> button{
+    position: relative;
+    overflow: hidden;
     height: fit-content;
     line-height: 1.2cm;
     width: 2.5cm;
-    border-radius: 30px;
+    border-radius: 20px;
     color: #457eff;
     background-color: white;
-    border-color: #457eff;
-    /* font-family: Inter,Roboto,sans-serif,Helvetica; */
+    border:  2px solid #457eff;
     font-size: 0.4cm;
     font-weight: 700;
 }
 #login > button:nth-child(2){
-    background-color: #ff7555;
-    color: white;
+    background-color: #fff;
+    color: #ff7555;
     border-color: #ff7555;
 }
 #login> button:hover{
@@ -78,6 +79,40 @@ li {
     border-left: 2px solid grey;
     height: 1.5cm;
 }
+
+
+
+/* Testing */
+
+#login > #loginBtn:hover{
+    color: #84a4ee;
+}
+#login > #registerBtn:hover{
+    color: #fc9a84;
+}
+#login > button::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(4px);
+}
+#loginBtn::before{
+    background: #457eff;
+}
+#registerBtn::before{
+    background:#ff7555;
+}
+
+#login > button:hover::before{
+    left: calc(100% + 32px);
+    transition: 0.75s;
+}
+
+/* Till here */
 
 
 

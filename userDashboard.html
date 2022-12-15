@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Results</title>
-    <link rel="stylesheet" href="./Styles/searchPage.css">
+    <title>Home | jobSearch</title>
+    <link rel="stylesheet" href="./Styles/userDashboard.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <div id="navBar">
-        <a href="./Dashboard.html"><div id="logo"><img src="./Photos/JobSearch.jpg" alt="Logo"></div></a>
+        <div id="logo"><img src="./Photos/JobSearch.jpg" alt="Logo"></div>
         <div id="nav">
             <ul>
                 <li>Jobs</li>
@@ -20,58 +20,91 @@
             
         </div>
         
-        <div id="search">
-            <div>
-                <input type="text" placeholder="Enter Skills / Companies">
-            </div>
-            
-            <a href="./searchPage.html">
-            <div class="search">
-                <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/rlizirgt.json"
-                    trigger="hover"
-                    style="width:25px;height:25x">
-                </lord-icon>
-            </div>
-            </a>
-        </div>
 
         <div id="login">
-            <button onclick= "location.href=`./loginPage.html`" id="loginBtn">Login</button>
-            <button onclick= "location.href=`./registerPage.html`" id="registerBtn">Register</button>
-            <div class="line"></div>
+            
+            <div><img src="./Photos/bell.png" alt="bellIcon" class="img"></div>
+            <div>
+                <img src="./Photos/user.png" alt="user" class="img" onclick="location.href=`./userDashboard.html`">
+            </div>
             
         </div>
     </div>
-    
-
-    <!-- Main Div here -->
-    <div id="main">
-
-        <!-- Filter part here -->
-        <div id="filter">
-            
-            
-        </div>
-
-        <!-- Results part -->
-        <div id="results">
-            <!-- Append Data Here -->
-        </div>
 
 
-        <!-- Bonus part -->
-        <div id="bonus">
-            
-
-        </div>
-
+    <div class="bg">
     </div>
 
+    <div class="parent">
 
+        <div class="child1">
+
+            <div class="search">
+                <p>Search Jobs</p>
+                <div>
+                    <div>
+                        <input type="text" placeholder="Enter Skills / Companies">
+                    </div>
+                    
+                    <a href="./searchPage.html">
+                        <div class="search">
+                            <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/rlizirgt.json"
+                                trigger="hover"
+                                style="width:25px;height:25x">
+                            </lord-icon>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recommended jobs -->
+            <p>Jobs</p>
+            <div>
+                <!-- Append Data Here -->
+            </div>
+
+
+            <!-- Job Application status -->
+            <div>
+                <!-- Append Data Here -->
+            </div>
+
+            <!-- Saved Jobs -->
+            <div>
+                <!-- Append Data here -->
+            </div>
+
+            <!-- Recuriters -->
+            <p>Recruiters</p>
+            <div>
+                <P>New Recruiter Messages</P>
+                <hr>
+                <p>You do not have any unread message.</p>
+                <p></p> Messages received from different recruiters will appear in this section.</p>
+            </div>
+
+        </div>
+
+        <div class="child2">
+            
+            <!-- Profile Details -->
+            <div>
+                <img src="" alt="">
+                <!-- Strong -->
+                <!-- p -->
+                
+            </div>
+            <div>
+                <p>Get real-time job updates & instant notifications only on the app!</p>
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Section -->
+
     <footer>
         <hr style="margin-top: 200px;">
         <div id="footer">
@@ -144,5 +177,5 @@
             
     </footer>
 </body>
-<script src="./Scripts/searchPage.js"></script>
+<script src="./Scripts/userDashboard.js"></script>
 </html>

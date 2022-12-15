@@ -1,0 +1,275 @@
+/* div{
+    border: 1px solid black;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigaition Bar */
+#logo{
+    margin-left: 1.8in;
+}
+#logo:hover{
+    cursor: pointer;
+}
+#logo > img{
+    height: 0.8in;
+}
+#navBar{
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    position: sticky;
+    top: 0.1px;
+}
+li {
+    display: inline;
+    margin-left: 50px;
+    color: grey;
+    font-weight: medium;
+}
+
+#nav{
+    margin-left: 0.5in;
+    width: 4in;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: large;
+}
+
+#nav li{
+    color: #445578;
+}
+
+#nav li:hover{
+    color: #1976D2;
+    cursor: pointer;
+}
+
+#login{
+    display: flex;
+    width: 3.5in;
+    margin-left: 3in;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#login> button{
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+    line-height: 1.2cm;
+    width: 2.5cm;
+    border-radius: 20px;
+    color: #457eff;
+    background-color: white;
+    border:  2px solid #457eff;
+    font-size: 0.4cm;
+    font-weight: 700;
+}
+#login > button:nth-child(2){
+    background-color: #fff;
+    color: #ff7555;
+    border-color: #ff7555;
+}
+#login> button:hover{
+    cursor: pointer;
+}
+.line{
+    border-left: 2px solid grey;
+    height: 1.5cm;
+}
+
+
+
+/* Testing */
+
+#login > #loginBtn:hover{
+    color: #84a4ee;
+}
+#login > #registerBtn:hover{
+    color: #fc9a84;
+}
+#login > button::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(4px);
+}
+#loginBtn::before{
+    background: #457eff;
+}
+#registerBtn::before{
+    background:#ff7555;
+}
+
+#login > button:hover::before{
+    left: calc(100% + 32px);
+    transition: 0.75s;
+}
+
+/* Till here */
+
+
+body{
+    background-color: #fafbfe;
+}
+
+/* Parent */
+#parent{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+/* Child 1 */
+#child1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    height: 27.4rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#child1 > strong{
+    color: #091e42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+#child1 > div:nth-child(7) > img{
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+}
+.img{
+    position: absolute;
+    bottom: 63px;
+    left: 565px;
+}
+#child1 img{
+    width: 20px;
+    height: 20px;
+}
+
+#child1 > div{
+    color: #091e42;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 0px 10px 0px;
+}
+#child1 button{
+    width: 50%;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #4a90e2;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-top: 30px;
+    background-color: #fff;
+}
+#child1 button:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+/* Child 2 */
+#child2 img{
+    width: 30px;
+    height: 30px;
+}
+#child2{
+    width: 45%;
+    background-color: #fff;
+    padding: 30px 0px 40px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#child2 strong{
+    color: #091e42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-left: 50px;
+}
+.strong{
+    margin-bottom: 20px;
+}
+form > input{
+    display: block;
+    font-size: 17px;
+    line-height: 22px;
+    padding: 9px 16px 11px;
+    border-radius: 4px;
+    width: 70%;
+    border: 1px solid #d3e1ea;
+    color: #1b2437;
+    background-color: #fff;
+    margin: 0px 0px 30px 50px;
+}
+form > input:focus{
+    outline:#1976D2;
+    border: 1px solid #457eff;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+form span{
+    color: #445578;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 13px;
+    margin: 0px 0px 30px 50px;
+}
+form > p{
+    margin: -15px 0px 30px 53px;
+    color: #457eff;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+form > label{
+    color: #445578;
+    font-size: 13px;
+    line-height: 18px;
+}
+form > div{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 24%);
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+}
+form > div > div{
+    margin-left: 85px;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: .4px;
+    padding-top: 9px;
+}
+#submit:hover{
+    cursor: pointer;
+    border: 1px solid #457eff;
+    color: #457eff;
+}
+
+.google:hover{
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}

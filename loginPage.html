@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Styles/loginPage.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navBar">
+        <div id="logo" onclick="location.href=`./Dashboard.html`"><img src="./Photos/JobSearch.jpg" alt="Logo"></div>
+        <div id="nav">
+            <ul>
+                <li>Jobs</li>
+                <li>Companies</li>
+                <li>Services</li>
+            </ul>
+            
+        </div>
+        
+
+        <div id="login">
+            <button onclick= "location.href=`./loginPage.html`" id="loginBtn">Login</button>
+            <button onclick= "location.href=`./registerPage.html`" id="registerBtn">Register</button>
+            <div class="line"></div>
+            
+        </div>
+    </div>
+
+    <div id="parent">
+
+        <!-- Child 1 -->
+        <div id="child1">
+            <strong>New to jobSearch?</strong>
+            <div><img src="./Photos/check.png" alt="Check"> <span>One click apply using JobSearch profile.</span></div>
+            <div><img src="./Photos/check.png" alt="Check"> <span>Get relevant job recommendations.</span></div>
+            <div><img src="./Photos/check.png" alt="Check"> <span>Showcase profile to top companies and consultants.</span></div>
+            <div><img src="./Photos/check.png" alt="Check"> <span>Know application status on applied jobs.</span></div>
+            <button onclick="location.href=`./registerPage.html`">Register for Free</button>
+            <div class="img">
+                <img src="//static.naukimg.com/s/5/105/i/register.png" alt="Error">
+            </div>
+        </div>
+
+        <!-- Child 2 -->
+        <div id="child2">
+            <div class="strong"><strong>Login</strong></div>
+            <form id="form">
+
+                <label for="email"> <span>Email ID / Username</span></label>
+                <input type="email" name="email" id="email" placeholder="Enter Email ID / Username">
+
+                <label for="pass"><span>Password</span></label>
+                <input type="password" name="pass" id="pass" placeholder="Enter Password">
+                <p>Forgot Password?</p>
+
+                <input type="submit" id="submit">
+
+                <hr style="margin: 50px 0px 40px 15%; width: 70%;">
+
+                <div class="google">
+                    <img src="./Photos/google.png" alt="Google"> <div>Sign in with Google</div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="./Scripts/loginPage.js"></script>
+</html>
