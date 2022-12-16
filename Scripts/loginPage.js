@@ -16,6 +16,7 @@ form.addEventListener("submit", (e)=>{
         
         if(el.email == userData.email && el.pass == userData.pass){
             localStorage.setItem("userDetails", JSON.stringify(el));
+            localStorage.setItem("signedin","true");
             check = true;
             return;
         }
@@ -25,7 +26,7 @@ form.addEventListener("submit", (e)=>{
     if(check == true){
         
         ifTrue();
-        
+
     } else{
         alert("Wrong Credentials");
 
@@ -40,9 +41,5 @@ function ifTrue(){
     if(window.confirm("Login Successful, Go to Dashboard?")){
         // action you want to perform
         window.open(`./userDashboard.html`,"_self")
-     }
-}
-
-function submitHere() {
-    document.getElementById("submit").setAttribute("onclick","location.href=`./userDashboard.html`");
+    }
 }

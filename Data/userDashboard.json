@@ -1,0 +1,31 @@
+{
+    "data" :[
+        {
+            "name":"Immediate Hiring For React JS Web Developer - MNC",
+            "p1":"Barrla Systems Pvt Ltd",
+            "p2":"Experience with popular React.js workflows (such as Flux or Redux) is a plus Hands-on e...",
+            "rating":"4.8 ",
+            "experience":"1-5 Yrs",
+            "salary":"Not disclosed",
+            "location":"Chennai(Mylapore)",
+            "skills":["Backend","React.Js","HTML","CSS","javascript"],
+            "date":"1 DAY AGO",
+            "dateCode":"2"
+        },
+        {
+            "name":"PHP/LAMP Web Developer - CodeIgniter/Wordpress",
+            "p1":"Hyrezy Talent Solutions",
+            "p2":"Experience working within a team setting The candidate should have some team leadership...",
+            "rating":"4.8 ",
+            "experience":"4-9 Yrs",
+            "salary":"50,000 - 8,75,000 PA.",
+            "location":"Noida",
+            "skills":["MySQL","Apache Server","LAMP","PHP","Server Administration","CodeIgniter"],
+            "date":"2 DAY AGO",
+            "dateCode":"3"
+        }
+    
+    ]
+}
+
+
