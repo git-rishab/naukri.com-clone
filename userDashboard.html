@@ -10,7 +10,7 @@
 <body>
     <!-- Navigation Bar -->
     <div id="navBar">
-        <div id="logo"><img src="./Photos/JobSearch.jpg" alt="Logo"></div>
+        <div id="logo"><img src="./Photos/JobSearch.jpg" alt="Logo" onclick="location.href=`./Dashboard.html`"></div>
         <div id="nav">
             <ul>
                 <li>Jobs</li>
@@ -39,50 +39,55 @@
 
         <div class="child1">
 
+            <!-- Search Part -->
             <div class="search">
                 <p>Search Jobs</p>
                 <div>
                     <div>
                         <input type="text" placeholder="Enter Skills / Companies">
+                        <a href="./searchPage.html">
+                            <div class="search1">
+                                <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/rlizirgt.json"
+                                    trigger="hover"
+                                    style="width:25px;height:25x">
+                                </lord-icon>
+                            </div>
+                        </a>
                     </div>
                     
-                    <a href="./searchPage.html">
-                        <div class="search">
-                            <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/rlizirgt.json"
-                                trigger="hover"
-                                style="width:25px;height:25x">
-                            </lord-icon>
-                        </div>
-                    </a>
+                    
                 </div>
             </div>
 
             <!-- Recommended jobs -->
-            <p>Jobs</p>
-            <div>
+            
+            <div id="recom">
+                <p class="recom_p">New Recommended Job(s)</p>
                 <!-- Append Data Here -->
             </div>
 
 
             <!-- Job Application status -->
-            <div>
+            <div id="status">
                 <!-- Append Data Here -->
             </div>
 
             <!-- Saved Jobs -->
-            <div>
+            <div id="saved">
                 <!-- Append Data here -->
             </div>
 
             <!-- Recuriters -->
-            <p>Recruiters</p>
-            <div>
-                <P>New Recruiter Messages</P>
-                <hr>
-                <p>You do not have any unread message.</p>
-                <p></p> Messages received from different recruiters will appear in this section.</p>
+            <div id="recruit">
+                <p class="recom_p">Recruiters</p>
+                <div>
+                    <P>New Recruiter Messages</P>
+                    <hr>
+                    <p>You do not have any unread message.</p>
+                    <p style="margin-top: 30px;"> Messages received from different recruiters will appear in this section.</p>
+                </div>
             </div>
 
         </div>
@@ -90,15 +95,24 @@
         <div class="child2">
             
             <!-- Profile Details -->
-            <div>
-                <img src="" alt="">
-                <!-- Strong -->
-                <!-- p -->
-                
+            <div id="user">
+                <div class="userImg">
+                    <img src="./Photos/user.png" alt="user" >
+                </div>
+
+                <div id="userData">
+                    <!-- Append Data Here -->
+
+                </div>
+
             </div>
-            <div>
-                <p>Get real-time job updates & instant notifications only on the app!</p>
-                <img src="" alt="">
+            <div class="store">
+                <div>
+                    <p>Get real-time job updates & instant notifications only on the app!</p>
+                    <img src="//static.naukimg.com/s/5/105/i/qrcode.png" alt="QR">
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

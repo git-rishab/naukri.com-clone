@@ -11,7 +11,9 @@
 #logo{
     margin-left: 1.8in;
 }
-
+#logo:hover{
+    cursor: pointer;
+}
 #logo > img{
     height: 0.8in;
 }
@@ -21,6 +23,7 @@
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     position: sticky;
     top: 0.1px;
+    z-index: 1;
 }
 li {
     display: inline;
@@ -73,6 +76,13 @@ li {
     border-color: #ff7555;
 }
 #login> button:hover{
+    cursor: pointer;
+}
+#login img{
+    width: 40px;
+    height: 40px;
+}
+#login img:hover{
     cursor: pointer;
 }
 .line{

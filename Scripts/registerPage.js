@@ -1,3 +1,6 @@
+let data = {};
+
+
 // Border Color Changing Part
 document.querySelectorAll("#work > div:nth-child(1)")[0].addEventListener("click", ()=>{
 
@@ -7,6 +10,7 @@ document.querySelectorAll("#work > div:nth-child(1)")[0].addEventListener("click
 
     document.querySelectorAll("#work > div:nth-child(1)")[0].style.border = "2px solid #457eff";
     document.querySelectorAll("#work > div:nth-child(1)")[0].style.backgroundColor = "#fff";
+    data.work = "Experienced";
 });
 
 document.querySelectorAll("#work > div:nth-child(2)")[0].addEventListener("click", ()=>{
@@ -17,22 +21,22 @@ document.querySelectorAll("#work > div:nth-child(2)")[0].addEventListener("click
 
     document.querySelectorAll("#work > div:nth-child(2)")[0].style.border = "2px solid #457eff";
     document.querySelectorAll("#work > div:nth-child(1)")[0].style.backgroundColor = "#fff";
+    data.work = "Fresher";
 });
 
 let form = document.getElementById("mainForm");
 
-let credentials =  JSON.parse(localStorage.getItem("cred"))||[{email:"rkc3660@gmail.com",pass:"123",name:"Rishab Kr Chaurasiya",mobile:"8789789560"},];
+let credentials =  JSON.parse(localStorage.getItem("cred"))||[{email:"rkc3660@gmail.com",pass:"123",name:"Rishab Kr Chaurasiya",number:"8789704302", work: "Fresher"},];
 
 // Submission part
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
     
-    let data = {};
 
     data.name = form.name.value;
     data.email = form.email.value;
     data.pass = form.pass.value;
-    data.mobile = form.mobile.value;
+    data.number = form.mobile.value;
 
     credentials.push(data);
     localStorage.setItem("cred",JSON.stringify(credentials));

@@ -1,6 +1,6 @@
-div{
-    border: 1px solid black;
-}
+/* div{
+    border: 1px solid red;
+} */
 
 *{
     margin: 0px;
@@ -11,7 +11,9 @@ div{
 #logo{
     margin-left: 1.8in;
 }
-
+#logo:hover{
+    cursor: pointer;
+}
 #logo > img{
     height: 0.8in;
 }
@@ -21,6 +23,7 @@ div{
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     position: sticky;
     top: 0.1px;
+    z-index: 1;
 }
 li {
     display: inline;
@@ -55,8 +58,8 @@ li {
     justify-content: space-evenly;
 }
 .img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .img:hover{
     cursor: pointer;
@@ -140,9 +143,10 @@ body{
     background-color: #dfe6ed;
 }
 .parent{
-    width: 65%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 
 /* Child 1 */
@@ -152,11 +156,300 @@ body{
 }
 .search{
     width: 45%;
+    position: absolute;
+    top: 150px;
+    /* background-color: #1976D2; */
+ 
 }
 .search > p{
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 10px;
+}
+/* Search */
+
+.search > div{
+    width: 50%;
+    display: flex;
+    border: 1px solid #445578;
+    height: 1.3cm;
+    border-radius: 50px;
+    background-color: rgb(248, 247, 247);
+    padding: 16px 0px 0px 20px;
+}
+.search > div > div:nth-child(1){
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input{
+    height: 0.8cm;
+    font-size: 15px;
+    color: #1b2437;
+    border: none;
+    background-color: rgb(248, 247, 247);
+    font-family: "Inter";
+    flex-grow: 0.3;
+    color: #091e42;
+}
+.search input:focus{
+    outline: none;
+}
+
+/* Recommended jobs */
+.recom_p{
+    color: #666;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Roboto,sans-serif;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+#recom{
+    margin-top: 50px;
+    background-color: rgb(204, 223, 230);
+    border: 1px solid rgb(233, 221, 221);
+    border-radius: 20px;
+}
+#recom > div{
+    padding: 20px 25px 20px 25px;
+    margin: 30px 10px 30px 10px;
+    background-color: white;
+}
+.head{
+    color: #091e42;
+    font-weight:550;
+    font-size: medium;
+    margin-bottom: 12px;
+}
+.p1{
+    display: inline;
+    color: #091e42;
+    margin: 0px 10px 25px 0px;
+}
+.info{
+    margin: 8px 0px 8px 0px;
+    font-size: 13.5px;
+}
+.p2{
+    margin-bottom: 23px;
+    display: inline-block;
+}
+.date{
+    background-color: #d7f2e3;
+    width: 90px;
+    text-align: center;
+    border: none;
+    margin: 35px 0px 0px -10px;
+}
+.infos, .infos2, .infos3{
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+}
+.infos2{
+    margin-left: 20px;
+}
+.bigDiv:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.bigDiv{
+    border-radius: 20px;
+}
+
+/* Job Status */
+#status, #saved, #recruit, #user{
+    background-color: rgb(204, 223, 230);
+    margin-top: 50px;
+    border: 1px solid rgb(233, 221, 221);
+    border-radius: 20px;
+}
+#status > div, #saved> div, #recruit > div{
+    display: flex;
+    margin: 30px 10px 30px 10px;
+    padding: 20px 25px 20px 25px;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 12px;
+}
+#status > div p, #saved > div p, #recruit > div p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+    margin: 9px 0px 2px 0px;
+}
+#status > div > div:nth-child(1) span, #status h5, #saved h5, #saved > div > div:nth-child(1) span{
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+}
+#status h5, #saved h5{
+    font-family: Roboto,sans-serif;
+}
+#status img, #saved img{
+    width: 15px;
+    height: 15px;
+    margin: 9px 5px 0px 0px;
+}
+
+#status > div > div:nth-child(2), #saved > div > div:nth-child(2){
+    height: 17px;
+    display: inline-block;
+    text-align: center;
+    background: #2bae92;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 11px;
+    min-width: 120px;
+    align-self: center;
+    font-size: 14px;
+}
+#saved > div > div:nth-child(2){
+    background: #1976D2;
+}
+
+#recruit > div{
+    display: block;
+}
+
+/* User Details */
+
+.userImg img{
+    height: 70px;
+    width: 70px;
+}
+.userImg{
+    width: fit-content;
+    position: relative;
+    top: -40px;
+    left: 140px;
+    margin-bottom: -50px;
+}
+#user{
+    position: absolute;
+    top: 150px;
+    width: 380px;
+    display: block;
+    background-color: rgb(204, 223, 230);
+
+}
+#userData{
+    margin: 30px 10px 30px 10px;
+    padding: 20px 25px 20px 25px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+#userData > .recom_p{
+    font-size: 13.5px;
+    margin: 4px 0pc 5px 0px;
+}
+#userData > h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+#userData > h4{
+    margin-top: 15px;
+    font-weight: 400;
+}
+#userData > img{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+.userDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.userDiv > div{
+    width: 42%;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%), 0 1px 2px 0 rgb(0 0 0 / 10%), 0 2px 1px -2px rgb(0 0 0 / 20%);
+    padding: 10px;
+}
+/* Performance Part */
+.num_p, .num, .boost_p, .boost_p2{
+    font-size: 15px;
+    color: #4a90e2;
+    font-weight: 400;
+    margin: 0px 4px 2px 4px;
+}
+.num{
+    font-size: 20px;
+}
+.per{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+/* BoostPart */
+.boost{
+    background: #f5f5f5;
+    padding: 12px 20px 10px;
+    margin-top: 17px;
+}
+.boost_p{
+    font-size: 13.5px;
+}
+.boost_p:hover{
+    cursor: pointer;
+}
+.boost_p2{
+    font-size: 12px;
+    color: #666;
+}
+/* Logout part */
+#logout{
+    width: 100%;
+    line-height: 30px;
+    margin-top: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+#logout:hover{
+    cursor: pointer;
+}
+
+/* PlayStore Part */
+
+.store{
+    margin-top: 450px;
+    width: 370px;
+    background-color: rgb(204, 223, 230);
+    border: 1px solid rgb(233, 221, 221);
+    border-radius: 20px;
+    
+    
+}
+.store > div{
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 30px 10px 30px 10px;
+    padding: 20px 25px 20px 25px;
+}
+.store img{
+    width: 110px;
+    height: 110px;
+    margin-left: 50px;
+    border: 1px solid black;
+}
+.store p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* width: 137px; */
+    color: #333;
+    /* margin-bottom: 14px; */
+    margin-top: 12px;
 }
 
 

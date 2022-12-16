@@ -220,9 +220,41 @@ let Grow = [
     },
 ];
 
+
+let signedIn = localStorage.getItem("signedin");
 let hire = document.getElementById("hiring");
 let spons = document.getElementById("sponsored");
 let growCareer = document.getElementById("grow");
+
+// Checking if SignedIn
+if(signedIn == "true"){
+    let div1 = document.createElement("div");
+    let div2 = document.createElement("div");
+    div2.setAttribute("onclick","location.href=`./userDashboard.html`");
+
+    let bell = document.createElement("img");
+    bell.setAttribute("src","./Photos/bell.png");
+    let user = document.createElement("img");
+    user.setAttribute("src","./Photos/user.png");
+
+    div1.append(bell);
+    div2.append(user);
+    document.getElementById("login").append(div1,div2);
+} else {
+    let btn1 = document.createElement("button");
+    btn1.setAttribute("id", "loginBtn");
+    btn1.setAttribute("onclick", "location.href=`./loginPage.html`");
+
+    let btn2 = document.createElement("button");
+    btn2.setAttribute("id", "registerBtn");
+    btn2.setAttribute("onclick", "location.href=`./registerPage.html`");
+
+    btn1.innerText = "Login";
+    btn2.innerText = "Register";
+
+    document.getElementById("login").append(btn1,btn2);
+}
+
 
 function createDOM(arr) {
     // hire.innerHTML = null;

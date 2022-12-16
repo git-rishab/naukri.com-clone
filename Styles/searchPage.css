@@ -76,6 +76,13 @@ li {
 #login> button:hover{
     cursor: pointer;
 }
+#login img{
+    width: 40px;
+    height: 40px;
+}
+#login img:hover{
+    cursor: pointer;
+}
 .line{
     border-left: 2px solid grey;
     height: 1.5cm;
