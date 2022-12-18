@@ -1,4 +1,4 @@
-let data = JSON.parse(localStorage.getItem("cred")) || [];
+let data = JSON.parse(localStorage.getItem("cred")) || [{email:"rkc3660@gmail.com",pass:"123",name:"Rishab Kr Chaurasiya",number:"8789704302", work: "Fresher"},];
 let form = document.getElementById("form");
 
 form.addEventListener("submit", (e)=>{

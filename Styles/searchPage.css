@@ -263,7 +263,7 @@ body{
     display: block;
 }
 
-#salary{
+#salary, .bonus{
     padding: 3px 0px 3px 8px;
     display: flex;
     flex-direction: column;
@@ -279,9 +279,9 @@ body{
 .filForm{
     display: flex;
     align-items: center;
-    
+    color: #536777;
 }
-.chk{
+.chk, .chk1, .chk2, .chk3{
     height: 12px;
     width: 12px;
     border-radius: 10px;
@@ -289,6 +289,7 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1.5px solid rgb(77, 76, 76);
+    /* padding:px; */
 }
 .chk:hover{
     cursor: pointer;
@@ -316,7 +317,7 @@ body{
     background-color: rgb(204, 223, 230);
     padding: 8px 5px;
     border-radius: 10px;
-    
+    height: max-content;
 }
 #results > div{
     padding: 25px 30px 25px 30px;
@@ -367,7 +368,7 @@ body{
 /* Bonus Part */
 #bonus{
     width: 20%;
-    height: 200px;
+    height: max-content;
     background-color: rgb(204, 223, 230);
     padding: 8px 5px;
     border-radius: 10px;

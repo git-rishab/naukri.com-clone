@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | jobSearch</title>
-    <link rel="stylesheet" href="./Styles/userDashboard.css">
+    <title>Pay Now</title>
+    <link rel="stylesheet" href="./Styles/makePayment.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -22,104 +22,65 @@
         
 
         <div id="login">
-            
-            <div><img src="./Photos/bell.png" alt="bellIcon" class="img"></div>
-            <div>
-                <img src="./Photos/user.png" alt="user" class="img" onclick="location.href=`./userDashboard.html`">
-            </div>
-            
+            <!-- Append Data Here -->
+            <!-- <div class="line"></div> -->
         </div>
     </div>
 
 
-    <div class="bg">
-    </div>
+    <div class="main">
 
-    <div class="parent">
-
+        <!-- child 1 -->
         <div class="child1">
-
-            <!-- Search Part -->
-            <div class="search">
-                <p>Search Jobs</p>
-                <div>
-                    <div>
-                        <input type="text" placeholder="Enter Skills / Companies" id="searchInput">
-                        <a href="./searchPage.html">
-                            <div class="search1" onclick="search()">
-                                <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/rlizirgt.json"
-                                    trigger="hover"
-                                    style="width:25px;height:25x">
-                                </lord-icon>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-
-            <!-- Recommended jobs -->
+            <h2>Card Details</h2>
+            <span><label for="cardNO">Card Number</label></span>
+            <br>
+            <!-- <input type="number" name="cardNO" placeholder="Card Number" class="inp inp1"> -->
+            <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" class="inp inp1">
+            <br>
+            <span><label for="cardName">Card holder name</label></span>
+            <br>
+            <input type="text" name="cardName" placeholder="Card holder name" class="inp inp2">
+            <br>
+            <span><label for="expiry">Expiry Date</label></span>
+            <br>
+            <input type="number" name="expiry" placeholder="Month" class="inp"><span>&nbsp;&nbsp;&nbsp;</span><input type="number" placeholder="Year" class="inp">
+            <br>
+            <span><label for="cvv">CVV</label></span>
+            <br>
             
-            <div id="recom">
-                <p class="recom_p">New Recommended Job(s)</p>
+            <input type="password" name="cvv" placeholder="XXX" class="inp">
+            <br>
+
+            <button id="pay">MAKE PAYMENT</button>
+
+            <div id="otp">
                 <!-- Append Data Here -->
             </div>
-
-
-            <!-- Job Application status -->
-            <div id="status">
-                <!-- Append Data Here -->
-            </div>
-
-            <!-- Saved Jobs -->
-            <div id="saved">
-                <!-- Append Data here -->
-            </div>
-
-            <!-- Recuriters -->
-            <div id="recruit">
-                <p class="recom_p">Recruiters</p>
-                <div>
-                    <P>New Recruiter Messages</P>
-                    <hr>
-                    <p>You do not have any unread message.</p>
-                    <p style="margin-top: 30px;"> Messages received from different recruiters will appear in this section.</p>
-                </div>
-            </div>
-
         </div>
 
-        <div class="child2">
+        <!-- child 2 -->
+
+        <div  class="child2">
+            <P class="bold">Price Details</P>
+            <div>
+                <P>Total</P> <div>₹<span id="total"></span></div>
+            </div>
+            <div>
+                <P style="color: green;">Discount (30% OFF)</P><div>- ₹<span id="dis"></span></div>
+            </div>
+            <div>
+                <P>Estimated GST</P><div>₹<span id="gst"></span></div>
+            </div>
+            <hr style="margin-top: 40px;">
+            <div>
+                <P class="bold">Total Payable Amount</P><div>₹<span id="grandTotal"></span></div>
+            </div>
             
-            <!-- Profile Details -->
-            <div id="user">
-                <div class="userImg">
-                    <img src="./Photos/user.png" alt="user" >
-                </div>
-
-                <div id="userData">
-                    <!-- Append Data Here -->
-
-                </div>
-
-            </div>
-            <div class="store">
-                <div>
-                    <p>Get real-time job updates & instant notifications only on the app!</p>
-                    <img src="//static.naukimg.com/s/5/105/i/qrcode.png" alt="QR">
-                    </div>
-                </div>
-                
-            </div>
         </div>
+        
     </div>
 
-    <div id="sub">
-        <p id="subtext"></p>
-    </div>
 
     <!-- Footer Section -->
 
@@ -195,5 +156,5 @@
             
     </footer>
 </body>
-<script src="./Scripts/userDashboard.js"></script>
+<script src="./Scripts/makePayment.js"></script>
 </html>

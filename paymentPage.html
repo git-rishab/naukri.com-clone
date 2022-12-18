@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | jobSearch</title>
-    <link rel="stylesheet" href="./Styles/userDashboard.css">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="./Styles/paymentPage.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -22,104 +22,71 @@
         
 
         <div id="login">
-            
-            <div><img src="./Photos/bell.png" alt="bellIcon" class="img"></div>
-            <div>
-                <img src="./Photos/user.png" alt="user" class="img" onclick="location.href=`./userDashboard.html`">
-            </div>
-            
+            <!-- Append Data Here -->
+            <!-- <div class="line"></div> -->
         </div>
     </div>
 
+    <!-- Header Section -->
+    <div class="main">
 
-    <div class="bg">
-    </div>
 
-    <div class="parent">
+        <!-- Child Div 1 -->
 
         <div class="child1">
-
-            <!-- Search Part -->
-            <div class="search">
-                <p>Search Jobs</p>
-                <div>
-                    <div>
-                        <input type="text" placeholder="Enter Skills / Companies" id="searchInput">
-                        <a href="./searchPage.html">
-                            <div class="search1" onclick="search()">
-                                <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/rlizirgt.json"
-                                    trigger="hover"
-                                    style="width:25px;height:25x">
-                                </lord-icon>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    
+            <h1>Key Features</h1>
+            <div>
+                <div class="img"> <img src="https://static.naukimg.com/s/7/123/i/profileIcon.d9c247a2.png" alt="img"></div>
+                <div class="text">
+                    <h4>Highlight Your Profile</h4>
+                    <p>Your profile is marked as ”Featured” to make you stand out in the Naukri Database as an active jobseeker.</p>
                 </div>
             </div>
-
-            <!-- Recommended jobs -->
             
-            <div id="recom">
-                <p class="recom_p">New Recommended Job(s)</p>
-                <!-- Append Data Here -->
-            </div>
-
-
-            <!-- Job Application status -->
-            <div id="status">
-                <!-- Append Data Here -->
-            </div>
-
-            <!-- Saved Jobs -->
-            <div id="saved">
-                <!-- Append Data here -->
-            </div>
-
-            <!-- Recuriters -->
-            <div id="recruit">
-                <p class="recom_p">Recruiters</p>
-                <div>
-                    <P>New Recruiter Messages</P>
-                    <hr>
-                    <p>You do not have any unread message.</p>
-                    <p style="margin-top: 30px;"> Messages received from different recruiters will appear in this section.</p>
+            <div>
+                <div class="img"> <img src="https://static.naukimg.com/s/7/123/i/rankHighIcon.97b8019a.png" alt="img"></div>
+                <div class="text">
+                    <h4>Rank Higher In Search Results</h4>
+                    <p>Your profile is given a higher rank when recruiters search CVs of active candidates in Naukri database</p>
                 </div>
             </div>
 
+            <div>
+                <div class="img"> <img src="https://static.naukimg.com/s/7/123/i/dedicatedRM.cf55f9a0.png" alt="img"></div>
+                <div class="text">
+                    <h4>A dedicated relationship manager post purchase</h4>
+                    <p>A dedicated relationship manager will resolve if you have any query post purchasing the service</p>
+                </div>
+            </div>
+            
         </div>
 
+        <!-- Child Div 2 -->
         <div class="child2">
-            
-            <!-- Profile Details -->
-            <div id="user">
-                <div class="userImg">
-                    <img src="./Photos/user.png" alt="user" >
+            <p>Choose Subscription</p>
+
+            <div class="plan">
+                <div class="plans" id="plan1">
+                    <p>1 Month</p>
+                    <h2> ₹601<sup>*</sup></h2>
+                    <p><s>₹859</s> 30% Off</p>
                 </div>
-
-                <div id="userData">
-                    <!-- Append Data Here -->
-
+                <div class="plans" id="plan2">
+                    <p>3 Month</p>
+                    <h2> ₹1,433<sup>*</sup></h2>
+                    <p><s>₹2047</s> 30% Off</p>
                 </div>
-
+                <div class="plans" id="plan3">
+                    <p>6 Month</p>
+                    <h2> ₹2118 <sup>*</sup></h2>
+                    <p><s>₹3025</s> 30% Off</p>
+                </div>
             </div>
-            <div class="store">
-                <div>
-                    <p>Get real-time job updates & instant notifications only on the app!</p>
-                    <img src="//static.naukimg.com/s/5/105/i/qrcode.png" alt="QR">
-                    </div>
-                </div>
-                
-            </div>
+
+            <button id="buy" onclick="location.href=`./makePayment.html`">BUY NOW</button>
         </div>
     </div>
 
-    <div id="sub">
-        <p id="subtext"></p>
-    </div>
 
     <!-- Footer Section -->
 
@@ -195,5 +162,5 @@
             
     </footer>
 </body>
-<script src="./Scripts/userDashboard.js"></script>
+<script src="./Scripts/paymentPage.js"></script>
 </html>

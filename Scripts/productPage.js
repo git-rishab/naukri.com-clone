@@ -187,3 +187,9 @@ function createDOM(arr) {
 }
 
 createDOM(data);
+
+function search() {
+    
+    let inp = document.getElementById("searchInput");
+    localStorage.setItem("searchInp", inp.value);
+}

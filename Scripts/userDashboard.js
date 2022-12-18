@@ -132,7 +132,8 @@ function createStatus(arr) {
     arr.forEach((el,ind)=>{
         let bigDiv = document.createElement("div");
         bigDiv.setAttribute("class", "bigDiv");
-        bigDiv.setAttribute("onclick","location.href=`./productPage.html`")
+        bigDiv.setAttribute("onclick","location.href=`./productPage.html`");
+        
         let div1 = document.createElement("div");
         let div2 = document.createElement("div");
         let h5 = document.createElement("h5");
@@ -176,6 +177,7 @@ function createSaved(arr) {
     arr.forEach((el,ind)=>{
         let bigDiv = document.createElement("div");
         bigDiv.setAttribute("class", "bigDiv");
+        bigDiv.setAttribute("onclick","location.href=`./productPage.html`");
         let div1 = document.createElement("div");
         let div2 = document.createElement("div");
         let h5 = document.createElement("h5");
@@ -254,7 +256,7 @@ function createUser(details) {
     boostp.innerText = "3X Boost to Your Profile Performance. Explore.";
     boostp2.innerText = "Paid Service";
     boostp.setAttribute("class", "boost_p");
-    boostp.setAttribute("onclick","location.href=`./boostPage.html`");
+    boostp.setAttribute("onclick","location.href=`./paymentPage.html`");
     boostp2.setAttribute("class", "boost_p2")
     boost.append(boostp,boostp2);
 
@@ -268,12 +270,13 @@ function createUser(details) {
         localStorage.removeItem("saved");
         localStorage.removeItem("applied");
         localStorage.removeItem("userDetails");
+        localStorage.removeItem("subscriber");
         localStorage.setItem("signedin", false);
         localStorage.removeItem("job");
 
         if(window.confirm("Are you Sure, You Want to Sign Out?")){
             // action you want to perform
-            window.open(`./Dashboard.html`,"_self")
+            window.open(`./index.html`,"_self")
         }
     });
 
@@ -286,7 +289,24 @@ function createUser(details) {
     user.append(name,work,h5,emailIcon,email,br,numberIcon,number,perform,bigDiv,boost,logOut);
 }
 
+if(localStorage.getItem("subscriber") == "true"){
+    document.getElementById("subtext").innerText = "SUBSCRIBER";
+    document.getElementById("sub").style.border = "1px solid lightgreen";
+    document.getElementById("subtext").style.color = "lightgreen";
+}else{
+    document.getElementById("subtext").innerText = "NOT SUBSCRIBED";
+    document.getElementById("sub").style.border = "1px solid red";
+    document.getElementById("sub").style.color = "red";
+}
 
 createStatus(statusData);
 createSaved(savedData);
 createUser(userData);
+
+
+
+function search() {
+    
+    let inp = document.getElementById("searchInput");
+    localStorage.setItem("searchInp", inp.value);
+}

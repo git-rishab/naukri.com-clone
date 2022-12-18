@@ -261,7 +261,8 @@ function createDOM(arr) {
 
     arr.forEach((el,ind) => {
         let div = document.createElement("hiring");
-        
+        div.setAttribute("class","hire");
+        div.setAttribute("onclick","location.href=`./searchPage.html`")
         let h3 = document.createElement("h3");
         let p = document.createElement("p");
         let img1 = document.createElement("img");
@@ -273,7 +274,6 @@ function createDOM(arr) {
         let img4 = document.createElement("img");
         img4.setAttribute("src", el.img4);
 
-        div.style.boxShadow = "rgba(0, 0, 0, 0.18) 0px 2px 4px"
         div.style.border = "1px solid #EEEEEE"
         div.style.borderRadius = "30px 10px"
         div.style.padding = "5px 0px 0px 40px"
@@ -293,7 +293,8 @@ function sponsors(arr) {
 
     arr.forEach((el,ind) => {
         let bigDiv = document.createElement("div");
-        bigDiv.setAttribute("class", "sponserHov")
+        bigDiv.setAttribute("class", "sponserHov");
+        bigDiv.setAttribute("onclick","location.href=`./searchPage.html`");
         let img = document.createElement("img");
         img.setAttribute("src", el.img);
         let h3 = document.createElement("h3");
@@ -398,6 +399,8 @@ document.querySelectorAll(".filters > div:nth-child(2)")[0].addEventListener("cl
     })
     sponsors(neww);
 })
+
+// Hiring Buttons functionality
 document.querySelectorAll(".filters > div:nth-child(3)")[0].addEventListener("click", ()=>{
 
     for(let i = 1; i <= document.querySelectorAll(".filters > div").length; i++){
@@ -455,8 +458,15 @@ document.querySelectorAll(".filters > div:nth-child(1)")[0].addEventListener("cl
     sponsors(neww);
 })
 
-
-
 createDOM(hiring);
 sponsors(sponsore);
-grow(Grow)
+grow(Grow);
+
+
+
+function search() {
+    
+    let inp = document.getElementById("searchInput");
+    localStorage.setItem("searchInp", inp.value);
+}
+    

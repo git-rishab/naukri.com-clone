@@ -10,23 +10,23 @@
 <body>
     <!-- Navigation Bar -->
     <div id="navBar">
-        <a href="./Dashboard.html"><div id="logo"><img src="./Photos/JobSearch.jpg" alt="Logo"></div></a>
+        <a href="./index.html"><div id="logo"><img src="./Photos/JobSearch.jpg" alt="Logo"></div></a>
         <div id="nav">
             <ul>
-                <li>Jobs</li>
-                <li>Companies</li>
-                <li>Services</li>
+                <li onclick="location.href=`./index.html`">Jobs</li>
+                <li onclick="location.href=`./index.html`">Companies</li>
+                <li onclick="location.href=`./index.html`">Services</li>
             </ul>
             
         </div>
         
         <div id="search">
             <div>
-                <input type="text" placeholder="Enter Skills / Companies">
+                <input type="text" placeholder="Enter Skills / Companies" id="searchInput">
             </div>
             
-            <a href="./searchPage.html">
-            <div class="search">
+            <!-- <a href="./searchPage.html"> -->
+            <div class="search" id="searchInp">
                 <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
                 <lord-icon
                     src="https://cdn.lordicon.com/rlizirgt.json"
@@ -34,7 +34,7 @@
                     style="width:25px;height:25x">
                 </lord-icon>
             </div>
-            </a>
+            <!-- </a> -->
         </div>
 
         <div id="login">
@@ -62,20 +62,20 @@
                     <p class="filterP">Salary</p>
                 </div>
                 
-                <div class="filForm">
-                    <div class="chk"></div> 1-2 Lakhs
+                <div class="filForm" >
+                    <div class="chk" id="S1"></div> 1-2 Lakhs
+                </div>
+                <div class="filForm" >
+                    <div class="chk" id="S2"></div> 2-5 Lakhs
+                </div>
+                <div class="filForm" >
+                    <div class="chk" id="S3"></div> 5-8 Lakhs
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> 3-5 Lakhs
+                    <div class="chk" id="S4"></div> 8-10 Lakhs
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> 5-8 Lakhs
-                </div>
-                <div class="filForm">
-                    <div class="chk"></div> 5-10 Lakhs
-                </div>
-                <div class="filForm">
-                    <div class="chk"></div> Above 10 Lakhs
+                    <div class="chk" id="S5"></div> Above 10 Lakhs
                 </div>
                 
             </div>
@@ -86,21 +86,21 @@
                     <img src="./Photos/exp.png" alt="exp" class="filterImg">
                     <p class="filterP">Experience</p>
                 </div>
-                
+
                 <div class="filForm">
-                    <div class="chk"></div> 1 Yr
+                    <div class="chk1" id="E1"></div> Fresher
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> 2 Yrs
+                    <div class="chk1" id="E2"></div> 1 Yr
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> 3 Yrs
+                    <div class="chk1" id="E3"></div> 2 Yrs
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> 4 Yrs
+                    <div class="chk1" id="E4"></div> 3 Yrs
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> 5 Yrs+
+                    <div class="chk1" id="E5"></div> 4 Yrs+
                 </div>
                 
             </div>
@@ -109,25 +109,25 @@
                 
                 <div class="sal">
                     <img src="./Photos/Fil_loc.png" alt="locatoin" class="filterImg">
-                    <p class="filterP">Locatoin</p>
+                    <p class="filterP">Location</p>
                 </div>
                 
                 <div class="filForm">
-                    <div class="chk"></div> Bangalore
+                    <div class="chk2" id="L1"></div> Bangalore
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> Noida
+                    <div class="chk2" id="L2"></div> Noida
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> Kolkata
+                    <div class="chk2" id="L3"></div> Kolkata
                 </div>
                 <div class="filForm">
-                    <div class="chk"></div> Other(S)
+                    <div class="chk2" id="L4"></div> Other(S)
                 </div>
                 
             </div>
             
-            <button class="filBtn">Clear Filter</button>
+            <button class="filBtn" id="filBtn">Clear Filter</button>
 
 
         </div>
@@ -140,10 +140,22 @@
 
         <!-- Bonus part -->
         <div id="bonus">
-            <div>
-                <img src="" alt="">
+            <div class="bonus">
+                <div class="sal">
+                    <img src="./Photos/sort.png" alt="sorting" class="filterImg">
+                    <p class="filterP">Sort By:</p>
+                </div>
+                
+                <div class="filForm">
+                    <div class="chk3" id="sort1"></div> Date (Latest First)
+                </div>
+                <div class="filForm">
+                    <div class="chk3" id="sort2"></div> Salary (Highest First)
+                </div>
+                <div class="filForm">
+                    <div class="chk3" id="sort3"></div> Rating (Highest First)
+                </div>
             </div>
-
         </div>
 
     </div>

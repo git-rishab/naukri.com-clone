@@ -207,6 +207,7 @@ li {
 }
 #skills > div > div:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
 }
 
 /* Hiring Companies */
@@ -229,7 +230,13 @@ li {
     margin-left: 4px;
     margin-bottom: 8px;
 }
-/* #hiring > div: */
+.hire{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+#hiring .hire:hover{
+    cursor: pointer;
+    box-shadow: rgba(79, 79, 151, 0.05) 0px 4px 16px, rgba(50, 50, 218, 0.05) 0px 8px 32px;
+}
 
 
 /* Sponsored companies */
@@ -293,6 +300,7 @@ li {
     width: 65%;
     margin: auto;
     margin-top: 150px;
+    margin-bottom: -70px;
     justify-content: space-between;
 }
 #grow h4{

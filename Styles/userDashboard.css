@@ -452,4 +452,18 @@ body{
     margin-top: 12px;
 }
 
+/* subscribed */
+
+#sub{
+    width: max-content;
+    position: absolute;
+    top: 310px;
+    right: 260px;
+    padding: 4px;
+    border: 1px solid red;
+}
+#sub p{
+    color: red;
+    font-size: 13.5px;
+}
 

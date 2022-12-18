@@ -1,0 +1,280 @@
+/* div{
+    border: 1px solid black;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigaition Bar */
+#logo{
+    margin-left: 1.8in;
+}
+#logo:hover{
+    cursor: pointer;
+}
+#logo > img{
+    height: 0.8in;
+}
+#navBar{
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    position: sticky;
+    top: 0.1px;
+    z-index: 1;
+}
+li {
+    display: inline;
+    margin-left: 50px;
+    color: grey;
+    font-weight: medium;
+}
+
+#nav{
+    margin-left: 0.5in;
+    width: 4in;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: large;
+}
+
+#nav li{
+    color: #445578;
+}
+
+#nav li:hover{
+    color: #1976D2;
+    cursor: pointer;
+}
+
+#login{
+    display: flex;
+    width: 3.5in;
+    margin-left: 3in;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#login> button{
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+    line-height: 1.2cm;
+    width: 2.5cm;
+    border-radius: 20px;
+    color: #457eff;
+    background-color: white;
+    border:  2px solid #457eff;
+    font-size: 0.4cm;
+    font-weight: 700;
+}
+#login > button:nth-child(2){
+    background-color: #fff;
+    color: #ff7555;
+    border-color: #ff7555;
+}
+#login> button:hover{
+    cursor: pointer;
+}
+#login img{
+    width: 40px;
+    height: 40px;
+}
+#login img:hover{
+    cursor: pointer;
+}
+.line{
+    border-left: 2px solid grey;
+    height: 1.5cm;
+}
+
+
+
+/* Testing */
+
+#login > #loginBtn:hover{
+    color: #84a4ee;
+}
+#login > #registerBtn:hover{
+    color: #fc9a84;
+}
+#login > button::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(4px);
+}
+#loginBtn::before{
+    background: #457eff;
+}
+#registerBtn::before{
+    background:#ff7555;
+}
+
+#login > button:hover::before{
+    left: calc(100% + 32px);
+    transition: 0.75s;
+}
+
+/* Till here */
+
+/* Footer */
+
+.foot1{
+    padding-top: 60px;
+}
+
+.foot1 p{
+    color: #445578;
+    margin-bottom: 25px;
+}
+.foot1 > div:nth-child(5) > p{
+    margin: 10px 0px 20px;
+}
+.foot1 > div:nth-child(5){
+    border: 1px solid #EEEEEE;
+    height: 170px;
+    width: 320px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer> div:nth-child(1){
+    display: flex;
+    width: 65%;
+    height: 8cm;
+    margin: auto;
+    justify-content: space-between;
+}
+#footer> div:nth-child(1) > div:nth-child(1) > div:nth-child(1) img{
+    height: 1.5in;
+}
+.sitemap > p:hover{
+    cursor: pointer;
+    color: #457eff;
+}
+.foot1Imgs:hover{
+    cursor: pointer;
+}
+
+.socials > div:nth-child(2){
+    margin-top: 30px;
+}
+.socials p{
+    margin-bottom: 15px;
+    color: #445578;
+}
+
+.foot2{
+    height: 3cm;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+}
+.foot2 p{
+    color: #445578;
+    margin-top: 10px;
+}
+
+/* Main */
+
+.main{
+    width: 65%;
+    height: max-content;
+    display: flex;
+    margin: auto;
+    margin-top: 110px;
+    padding: 40px;
+    justify-content: space-between;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Child 1 */
+.child1{
+    width: 48%;
+    height: max-content;
+}
+.child1 p{
+    color: #445578;
+}
+.child1 > div{
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+    
+}
+.child1 .img{
+    margin-right: 15px;
+    /* width: 30px;
+    height: 30px; */
+}
+.child1 img{
+    width: 60px;
+    height: 60px;
+}
+.text h4{
+    margin-bottom: 10px;
+}
+
+/* Child 2 */
+
+.child2{
+    display: flex;
+    width: 48%;
+    height: max-content;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 30px;
+}
+.child2 > p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.plan{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.plan p{
+    margin-top: 4px;
+}
+.plan div{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.plan div:hover{
+    cursor: pointer;
+}
+.plan div:nth-child(1){
+    border: 3px solid #457eff;
+    background-color: #f8f8f8;
+}
+.child2 button{
+    width: 233px;
+    height: 54px;
+    border: none;
+    border-radius: 4px;
+    background: #fb641b;
+    line-height: 54px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 1;
+    margin: 0 auto 20px;
+}
