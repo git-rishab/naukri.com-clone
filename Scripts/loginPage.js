@@ -23,11 +23,16 @@ form.addEventListener("submit", (e)=>{
     });
 
     // Alert And login to another page
-    if(check == true){
+    if((check == true) && (form.email.value != "" && form.pass.value != "") ){
         
         ifTrue();
 
-    } else{
+    } else if(form.email.value == "" || form.pass.value == ""){
+        alert("Please Fill all the mandatory areas");
+        document.querySelectorAll("form > input")[0].style.border = "1px solid red";
+        document.querySelectorAll("form > input")[1].style.border = "1px solid red";
+
+    } else {
         alert("Wrong Credentials");
 
         document.querySelectorAll("form > input")[0].style.border = "1px solid red";

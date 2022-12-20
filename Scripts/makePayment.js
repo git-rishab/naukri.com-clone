@@ -53,6 +53,7 @@ let cont = document.getElementById("otp");
 
 document.getElementById("pay").addEventListener("click",()=>{
     cont.innerHTML = null;
+    alert("Your OTP is 123456");
     let h3 = document.createElement("h3");
     let inp = document.createElement("input");
     let btn = document.createElement("button");
@@ -69,6 +70,7 @@ document.getElementById("pay").addEventListener("click",()=>{
     inp.style.border = "1px solid black"
 
     btn.addEventListener("click",()=>{
+
         if(inp.value == 123456){
 
             localStorage.setItem("subscriber","true");

@@ -32,16 +32,27 @@ let credentials =  JSON.parse(localStorage.getItem("cred"))||[{email:"rkc3660@gm
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
     
+    if(form.name.value == "" || form.email.value == "" || form.pass.value == "" || form.mobile.value == ""){
+        alert("Please Fill all the Mandatory areas");
 
-    data.name = form.name.value;
-    data.email = form.email.value;
-    data.pass = form.pass.value;
-    data.number = form.mobile.value;
+    } else {
+        data.name = form.name.value;
+        data.email = form.email.value;
+        data.pass = form.pass.value;
+        data.number = form.mobile.value;
 
-    credentials.push(data);
-    localStorage.setItem("cred",JSON.stringify(credentials));
+        credentials.push(data);
+        localStorage.setItem("cred",JSON.stringify(credentials));
 
-    setTimeout(()=>{
-        alert("Registration Successful. Click 'OK' to Login");
-    },10);
+        setTimeout(()=>{
+            // alert("Registration Successful. Click 'OK' to Login");
+
+            if(window.confirm("Registration Successful. Click 'OK' to Login")){
+                window.open(`./loginPage.html`,"_self");
+                
+            }
+        },10);
+    }
+
+    
 });
